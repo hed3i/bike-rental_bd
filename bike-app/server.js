@@ -14,8 +14,13 @@ app.get("/", (req, res) => {
 
 const db = require("./app/models");
 db.sequelize.sync()
-  .then(() => console.log("База данных синхронизирована."))
-  .catch(err => console.log("Ошибка синхронизации БД:", err.message));
+  .then(() => {
+    console.log("База данных синхронизирована. Все таблицы созданы!");
+  })
+  .catch(err => {
+    console.error("Ошибка синхронизации БД:");
+    console.error(err);
+  });
 
 const PORT = process.env.NODE_DOCKER_PORT || 8080;
 app.listen(PORT, () => {

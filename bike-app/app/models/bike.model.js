@@ -6,7 +6,11 @@ module.exports = (sequelize, Sequelize) => {
     },
     status: {
       type: Sequelize.STRING,
-      defaultValue: "доступен"
+      defaultValue: "доступен",
+      defaultValue: "доступен",
+      validate: {
+        isIn: [['доступен', 'в аренде', 'в ремонте']]
+      }
     },
     deposit: {
       type: Sequelize.DECIMAL(8, 2),
