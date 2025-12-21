@@ -1,14 +1,18 @@
 module.exports = (sequelize, Sequelize) => {
-const Tutorial = sequelize.define("tutorial", {
- title: {
- type: Sequelize.STRING
- },
- description: {
- type: Sequelize.STRING
- },
- published: {
- type: Sequelize.BOOLEAN
- }
-});
-return Tutorial;
+  const Bike = sequelize.define("bike", {
+    model: {
+      type: Sequelize.STRING,
+      allowNull: false
+    },
+    status: {
+      type: Sequelize.STRING,
+      defaultValue: "доступен"
+    },
+    deposit: {
+      type: Sequelize.DECIMAL(8, 2),
+      allowNull: false
+    }
+  });
+
+  return Bike;
 };
