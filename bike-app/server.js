@@ -22,7 +22,16 @@ db.sequelize.sync({ force: true })
     console.error(err);
   });
 
+
+require("./app/routes/client.routes")(app);
+require("./app/routes/bike-type.routes")(app);
+require("./app/routes/station.routes")(app);
+require("./app/routes/bike.routes")(app);
+require("./app/routes/rental.routes")(app);
+
+
 const PORT = process.env.NODE_DOCKER_PORT || 8080;
+
 app.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
 });
