@@ -1,3 +1,4 @@
+const { underscoredIf } = require("sequelize/lib/utils");
 const dbConfig = require("../config/db.config.js");
 const Sequelize = require("sequelize");
 const sequelize = new Sequelize(
@@ -9,6 +10,9 @@ const sequelize = new Sequelize(
     dialect: dbConfig.dialect,
     port: dbConfig.port,
     operatorsAliases: false,
+    define: {
+      underscored: true,
+    },
     pool: {
       max: dbConfig.pool.max,
       min: dbConfig.pool.min,

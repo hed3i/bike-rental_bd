@@ -1,6 +1,24 @@
-# Прокат велосипедов
+# 🚲 Bike Rental API
 
-Система управления прокатом велосипедов.  
-Лабораторная работа №8 по дисциплине «Базы данных».
+Система управления прокатом велосипедов. REST API на Node.js + Express с базой данных PostgreSQL, ORM Sequelize и автоматической документацией Swagger.
 
-**Автор**: Бекиров А.Р., группа И-2-24
+## 🛠 Стек технологий
+
+- **Backend:** Node.js, Express
+- **ORM:** Sequelize
+- **Database:** PostgreSQL 15 (Alpine)
+- **Containerization:** Docker, Docker Compose
+- **Documentation:** Swagger (OpenAPI 3.0)
+- **Version Control:** Git + GitHub
+
+## 📦 Установка и запуск
+
+### Требования
+- Docker Desktop (или Docker Engine + Compose v2)
+- Node.js 18+
+- Git
+
+### 1. Клонирование
+```bash
+git clone https://github.com/ВАШ_НИК/bike-app.git
+cd bike-app
