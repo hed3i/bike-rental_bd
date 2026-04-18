@@ -17,8 +17,3 @@
 - Docker Desktop (или Docker Engine + Compose v2)
 - Node.js 18+
 - Git
-
-### 1. Клонирование
-```bash
-git clone https://github.com/hed3i/bike-app.git
-cd bike-app
