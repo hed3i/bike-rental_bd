@@ -20,5 +20,5 @@
 
 ### 1. Клонирование
 ```bash
-git clone https://github.com/ВАШ_НИК/bike-app.git
+git clone https://github.com/hed3i/bike-app.git
 cd bike-app
