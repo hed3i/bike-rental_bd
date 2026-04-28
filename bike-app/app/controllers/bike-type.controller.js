@@ -1,7 +1,6 @@
 const db = require("../models");
 const BikeType = db.BikeType;
 
-// Аналогично Client — CRUD операции
 exports.create = (req, res) => {
   BikeType.create(req.body)
     .then(data => res.status(201).send(data))

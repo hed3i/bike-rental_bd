@@ -14,7 +14,6 @@ app.get("/", (req, res) => {
   res.json({ message: "Добро пожаловать на сайт проката велосипедов!" });
 });
 
-// 🔹 НАСТРОЙКА SWAGGER
 const swaggerOptions = {
   swaggerDefinition: {
     openapi: "3.0.0",
